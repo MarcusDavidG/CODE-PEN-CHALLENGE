@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-align: center;
+}
