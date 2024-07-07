@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+.background-circle {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 20;
+}
+
+.foreground-circle {
+  fill: none;
+  stroke: #3498db;
+  stroke-width: 20;
+  stroke-dasharray: 565.48;
+  stroke-dashoffset: 565.48;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.slider {
+  margin-top: 20px;
+  width: 80%;
+}
+
+#progressValue {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
