@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive SVG Progress Circle</title>
+    <link rel="stylesheet" href="/Interactive SVG Progress Circle/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <svg
+        class="progress-circle"
+        width="200"
+        height="200"
+        viewBox="0 0 200 200"
+      >
+        <circle class="background-circle" cx="100" cy="100" r="90" />
+        <circle class="foreground-circle" cx="100" cy="100" r="90" />
+      </svg>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="progressSlider"
+      />
+      <p id="progressValue">0%</p>
+    </div>
+    <script src="/Interactive SVG Progress Circle/script.js"></script>
+  </body>
+</html>
